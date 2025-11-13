@@ -19,6 +19,10 @@
       rel="stylesheet"
     />
     <!-- Bootstrap icons-->
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
       rel="stylesheet"
@@ -32,10 +36,7 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div class="container px-5">
           <div>
-            <img
-              src="assets\favicon_3.ico"
-              href="index.html"
-            />
+            <img src="assets\favicon_3.ico" href="index.html" />
           </div>
           <a class="navbar-brand" href="index.html"
             ><span class="fw-bolder ml text-primary">KAMALRAJ P V</span></a
@@ -57,11 +58,35 @@
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="My Journey.html">My Journey</a>
+                <a class="nav-link" href="My Journey.html"onclick="alert('Oh You are already with my journey no other shotcuts from here!'); return false;">My Journey</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link2" href="Skills.html">Skills</a></li>
+                <li>
+                  <a class="nav-link2" href="certifications.html">Certifications</a>
+                </li>
+                <!-- <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li> -->
+              </ul>
+              <!-- </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Skills.html">Skills</a>
+            </li> -->
+            </li>
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="Skills.html">Skills</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
@@ -88,7 +113,7 @@
                 <!-- Note: Set the link href target to a PDF file within your project-->
                 <a
                   class="btn btn-primary px-4 py-3"
-                  href="https://drive.google.com/file/d/1KAJkmJz_T30Fg3n2EY-luOjfVssTjDRP/view?usp=sharing"
+                  href="https://drive.google.com/file/d/11jhPcrReAI4rFTkXYmfOzV0LWpo-Bt7W/view?usp=sharing"
                 >
                   <div class="d-inline-block bi bi-download me-2"></div>
                   Download Resume
@@ -306,20 +331,61 @@
       </div>
     </main>
     <!-- Footer-->
-    <footer class="bg-white py-4 mt-auto">
-      <div class="container px-5">
-        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-          <div class="col-auto">
-            <div class="small m-0">Copyright &copy; KAMALRAJ P V 2025 - All Rights Reserved, Except the site design.</div>
-          </div>
-          <div class="col-auto">
-            <a class="small" href="https://www.termsfeed.com/live/3da3a7af-ce11-4aff-90de-8701ae8c1dde" >Privacy</a>
-            <span class="mx-1">&middot;</span>
-            <a class="small" href="comingsoon.html">Terms</a>
-            <span class="mx-1">&middot;</span>
-            <a class="small" href="contact.html">Contact</a>
+    <footer>
+      <div class="footer-content">
+        <!-- <div class="footer-section">
+          <h3>About Us</h3>
+          <p>
+            We are a company dedicated to providing high-quality products and
+            services.
+          </p>
+        </div> -->
+        <div class="footer-section">
+          <h3>Contact Me</h3>
+          <ul>
+            <li>Phone: +91 7012194709</li>
+            <li>
+              Email:
+              <a href="mailto:kamalrajpv62@gmail.com" target="_blank"
+                >kamalrajpv62@gmail.com</a
+              >
+            </li>
+            <!-- <li>Address: 123 Main Street, Anytown USA</li> -->
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Me!</h3>
+          <div class="social-media">
+            <a href="https://github.com/kamalrajpv" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://x.com/kamalraj_pv" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://wa.me/917012194709" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="http://www.linkedin.com/in/kamalrajpv" target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
           </div>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; KAMALRAJ P V 2025- All Rights Reserved, Except the site design.
+        </p>
+      </div>
+      <div class="footer-bottom">
+        <a
+          class="small footer-text"
+          href="https://www.termsfeed.com/live/3da3a7af-ce11-4aff-90de-8701ae8c1dde"
+          >Privacy</a
+        >
+        <span class="mx-1">&middot;</span>
+        <a class="small" href="comingsoon.html">Terms</a>
+        <span class="mx-1">&middot;</span>
+        <a class="small" href="contact.html">Contact</a>
       </div>
     </footer>
     <!-- Bootstrap core JS-->
